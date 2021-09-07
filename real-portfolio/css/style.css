@@ -1208,10 +1208,40 @@ position: relative;
 top: 20rem;
 left: 50rem;
 }
+.hexa2{
+  position: relative;
+  top: 5rem;
+  left: 42rem;
+  }
+.hexa3{
+    position: relative;
+    top: 5rem;
+    left: 7rem;
+}
+.hexa4{
+  position: relative;
+  top: 20rem;
+  left: -18.5rem;
+}
+.hexa5{
+  position: relative;
+  top: 20rem;
+  left:-1rem;
+}
+.hexa6{
+  position: relative;
+  top: 35rem;
+  left:-27rem;
+}
+.hexa7{
+  position: relative;
+  top: 18rem;
+  left:44rem;
+}
 .hexa-hero{
   fill: #9FA4FA !important;
-  width: 5rem;
-  height: 5rem;
+  width: 8rem;
+  height: 8rem;
 }
 .hexagon-item {
   cursor: pointer;
@@ -1368,26 +1398,6 @@ left: 50rem;
   .hex-content:hover {
     color: #fff; }
 
-.page-home .hexagon-item:nth-last-child(1), .page-home .hexagon-item:nth-last-child(2), .page-home .hexagon-item:nth-last-child(3) {
-    -webkit-transform: rotate(30deg) translate(87px, -80px);
-    -moz-transform: rotate(30deg) translate(87px, -80px);
-    -ms-transform: rotate(30deg) translate(87px, -80px);
-    -o-transform: rotate(30deg) translate(87px, -80px);
-    transform: rotate(30deg) translate(87px, -80px);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hexagon-item:hover .icon i
 {
   color:#ff0037;
@@ -1398,8 +1408,8 @@ left: 50rem;
 
 .hexagon-item:hover .title
 {
-  -webkit-animation: focus-in-contract 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-contract 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: focus-in-contract 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 /***************************/
 
@@ -1430,6 +1440,11 @@ left: 50rem;
   }
 }
 
+.fixer{
+  position: absolute;
+  top: 11rem;
+}
+/*shinny animation*/
 
 .work{
     grid-row: 7 / 8;
