@@ -1,3 +1,4 @@
+
 :root {
     /*fonts*/
   --author-font: 'Dancing Script', cursive;
@@ -14,7 +15,7 @@
   --background-secondary-light: 257, 11%, 16%;
   --text-primary: 0, 0%, 0%;
     /*colors*/
-  --prime:#9294f8;
+  --prime:#5624D0;
   --black: 0, 0%, 0%;
   --white: 0, 0%, 100%;
   --quite-gray: 0, 0%, 50%;
@@ -38,6 +39,7 @@ font-size: 62.5%;
 body {
 font-family: 'Jura', sans-serif;
 background-color: #000; 
+color:#fff;
 margin: 0%;
 padding: 0%;
 font-family: 'Jura', sans-serif !important;
@@ -632,18 +634,20 @@ font-size: 2.4rem;
     text-transform: uppercase;
   }
   
-  .btn {
+  .btn-main {
     text-decoration: none;
     border: 1px solid rgb(146, 148, 248);
     position: relative;
     overflow: hidden;
+    top: 25%;
+    left: 40%;
   }
   
-  .btn:hover {
+  .btn-main:hover {
     box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
   }
   
-  .btn:before {
+  .btn-main:before {
     content: "";
     position: absolute;
     top: 0;
@@ -659,7 +663,7 @@ font-size: 2.4rem;
     transition: all 650ms;
   }
   
-  .btn:hover:before {
+  .btn-main:hover:before {
     left: 100%;
   }
   /*shotting star*/
@@ -1478,7 +1482,32 @@ height: 100vh;
     top: 5rem;
     left: 5rem;
         overflow: hidden;
-        border-radius: 10px;
+        border-radius: 25px;
+}
+.flip-card2{
+  background-color: transparent;
+  width: 30%;
+  height: 65%;
+  perspective: 1000px;
+
+    position: relative;
+    top: -36rem;
+    left: 42rem;
+        overflow: hidden;
+        border-radius: 25px;
+}
+
+.flip-card3{
+  background-color: transparent;
+  width: 30%;
+  height: 65%;
+  perspective: 1000px;
+
+    position: relative;
+    top: -76.5rem;
+    left: 79rem;
+        overflow: hidden;
+        border-radius: 25px;
 }
 
 .flip-card-inner {
@@ -1495,6 +1524,12 @@ height: 100vh;
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+.flip-card2:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card3:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -1505,8 +1540,9 @@ height: 100vh;
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: #17141D;
+  
+  color: #fff;
 }
 .flip-card-front-header{
   background-image: url("../images/projects-covers/bbbb.jpg");
@@ -1515,18 +1551,904 @@ height: 100vh;
   height: 50%;
  clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
 }
+.flip-card-front-header2{
+  background-image: url("../images/projects-covers/dsv.png");
+  background-position-y: 65%;
+  
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+ clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+}
+.flip-card-front-header3{
+  background-image: url("../images/projects-covers/nexter.png");
+  background-position-y: 65%;
+  
+  background-size: cover;
+  width: 100%;
+  height: 50%;
+ clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+}
+.flip-card-logo{
+  width: 12rem;
+  margin: .5rem;
+}
+.flip-card-logo2{
+  width: 18rem;
+  margin: .2rem;
+}
+.flip-card-logo3{
+  width: 13rem;
+  margin: .2rem;
+}
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #17141D;
+  
   color: white;
   transform: rotateY(180deg);
 }
 
-.reviews{
-    grid-row: 7 / 8;
-    margin-top: 30rem;
-
-background-color:#008000;    
+/*shining animation*/
+.i {
+  /*   positioning */
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  /*   gradient   */
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.03)), color-stop(30%, rgba(255, 255, 255, 0.85)), color-stop(50%, rgba(255, 255, 255, 0.85)), color-stop(70%, rgba(255, 255, 255, 0.85)), color-stop(71%, rgba(255, 255, 255, 0.85)), color-stop(100%, rgba(255, 255, 255, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.03) 1%, rgba(255, 255, 255, 0.6) 30%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.85) 70%, rgba(255, 255, 255, 0.85) 71%, rgba(255, 255, 255, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#00ffffff", endColorstr="#00ffffff",GradientType=1 );
+  /* IE6-9 */
+  /*  forming the shine element
+      play around with the width, skew and gradient to get different effects
+    */
+  width: 15%;
+  height: 100%;
+  transform: skew(-10deg, 0deg);
+  -webkit-transform: skew(-10deg, 0deg);
+  -moz-transform: skew(-10deg, 0deg);
+  -ms-transform: skew(-10deg, 0deg);
+  -o-transform: skew(-10deg, 0deg);
+  /*  animating it  */
+  animation: move 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  -webkit-animation: move 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  -moz-transform: skew(-10deg, 0deg);
+  -moz-animation: move 2s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-delay: 1s;
+  -ms-transform: skew(-10deg, 0deg);
+  -ms-animation: move 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-delay: 1s;
+  -o-transform: skew(-10deg, 0deg);
+  -o-animation: move 2s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-delay: 1s;
 }
+
+/*  */
+@keyframes move {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  48% {
+    opacity: 0.2;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    left: 82%;
+  }
+}
+
+.flip-card-content{
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+.flip-card-reviews{
+  height: 50%;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  
+  width: 100%;
+  margin-top: 2rem;
+
+}
+.flip-card-reviews2{
+  height: 50%;
+  
+  width: 100%;
+  margin-top: 2rem;
+background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+
+}
+.flip-card-back-content{
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 2rem;
+}
+.shine, .chrome {
+  font-size: 1.9rem;
+  margin: 1rem auto;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+
+
+.chrome {
+  background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  -webkit-background-size: 200px;
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-background-clip: text;
+  -webkit-animation-name: shine;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+
+}
+
+@-webkit-keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  20% {
+    background-position: top left;
+  }
+  90% {
+    background-position: top right;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+.progress-bar{
+  width: 70%;
+  height: .5rem;
+  background-color: #fff;
+  margin: 7rem 2rem;
+}
+.progress-bar-inner{
+  width: 14.4%;
+  height: .5rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  
+}
+.progress-bar-icon1{
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent; 
+font-size: 5rem;
+position: absolute;
+top: 9.5rem;
+right: 3rem;
+}
+.progress-bar-inner2{
+  width: 50.4%;
+  height: .5rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  
+}
+.progress-bar-icon2{
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent; 
+font-size: 5rem;
+position: absolute;
+top: 18rem;
+right: 2rem;
+}
+.progress-bar-inner3{
+  width: 80.4%;
+  height: .5rem;
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  
+}
+
+.progress-bar-icon3{
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent; 
+font-size: 5rem;
+position: absolute;
+top: 25rem;
+right: 1rem;
+}
+/*buttons */
+
+.container{
+
+
+
+  height:100%;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-more {
+    margin-top:5rem;
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn-more svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-more svg rect {
+    stroke: #7ed56f;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.btn-more span{
+  background: rgb(255,130,130);
+
+  background-image: linear-gradient(to right, #7ed56f 0%, #28b485 100%);
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-more:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+
+
+
+
+.container-trilio{
+
+
+
+  height:100%;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-more2 {
+    margin-top:32rem;
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn-more2 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-more2 svg rect {
+    stroke: #ba265d;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.btn-more2 span{
+  background: rgb(255,130,130);
+
+  background-image: linear-gradient(to right bottom, #ff3366 0%,#ba265d 100%);
+
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-more2:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+.flip-card-content2{
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+}
+.progress-bar-inner4{
+  width: 34.4%;
+  
+  height: .5rem;
+background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+  
+  
+}
+.progress-bar-inner5{
+  width: 20.4%;
+  height: .5rem;
+background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+  
+  
+}
+.progress-bar-icon4{
+  background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+    
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-size: 5rem;
+    position: absolute;
+    top: 9.5rem;
+    right: 3rem;
+    
+  }
+.progress-bar-icon5{
+    background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+ 
+    -webkit-background-clip: text;
+    color: transparent; 
+  font-size: 5rem;
+  position: absolute;
+  top: 18rem;
+  right: 2rem;
+  }
+  .progress-bar-icon6{
+    background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+    
+    -webkit-background-clip: text;
+    color: transparent; 
+  font-size: 5rem;
+  position: absolute;
+  top: 25rem;
+  right: 1rem;
+  }
+  .progress-bar-inner6{
+    width: 70.4%;
+    height: .5rem;
+  background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
+   
+    
+  }
+ 
+  .flip-card-content3{
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(to right bottom, #c69963,#c69963);
+  }
+  .flip-card-reviews3{
+    height: 50%;
+    
+    width: 100%;
+    margin-top: 2rem;
+    background-image: linear-gradient(to right bottom, #c69963,#c69963);
+
+  
+  }
+
+  .progress-bar-inner7{
+    width: 24.4%;
+    height: .5rem;
+  background-image: linear-gradient(to right bottom, #cc9963,#cc9963);
+    
+  }
+  .progress-bar-icon7{
+    background-image: linear-gradient(to right bottom, #cc9963,#cc9963);
+
+  -webkit-background-clip: text;
+  color: transparent; 
+font-size: 5rem;
+position: absolute;
+top: 9.5rem;
+right: 3rem;
+}
+.progress-bar-icon8{
+  background-image: linear-gradient(to right bottom, #cc9963,#cc9963);
+
+  -webkit-background-clip: text;
+  color: transparent; 
+font-size: 5rem;
+position: absolute;
+top: 18rem;
+right: 2rem;
+}
+.progress-bar-icon9{
+  background-image: linear-gradient(to right bottom, #cc9963,#cc9963);
+
+  -webkit-background-clip: text;
+  color: transparent; 
+font-size: 5rem;
+position: absolute;
+top: 25rem;
+right: 1rem;
+}
+.progress-bar-inner8{
+  width: 80.4%;
+  height: .5rem;
+  background-image: linear-gradient(to right bottom, #cc9963,#cc9963);
+
+  
+  
+}
+.progress-bar-inner9{
+  width: 50.4%;
+  height: .5rem;
+  background-image: linear-gradient(to right bottom, #cc9963,#cc9963);
+}
+.container-nexter{
+
+
+
+  height:100%;
+ position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn-more3 {
+    margin-top:32rem;
+    position: relative;
+    display: inline-block;
+    width: 277px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+    font-size:17px;
+    letter-spacing: 0.045em;
+}
+
+.btn-more3 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.btn-more3 svg rect {
+    stroke: #cc9963;
+    stroke-width: 4;
+    stroke-dasharray: 353, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+.btn-more3 span{
+  background: rgb(255,130,130);
+
+  background-image: linear-gradient(to right bottom, #cc9963 0%,#cc9963 100%);
+
+
+
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-more3:hover svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 196, 543;
+    stroke-dashoffset: 437;
+}
+.reviews{
+    grid-row: 6 / 7;
+    grid-column: 3 / -1;
+    position: relative;
+    margin-top: 10rem;
+    left: 4rem;
+    width: 84.8vw;
+    height: 100vh;
+
+}
+.feedback-heading{
+  font-family: var(--heading);
+  text-transform: capitalize;
+  font-size: 5rem;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, var(--prime), var(--prime));
+  -webkit-text-fill-color: transparent;
+ font-weight: bolder;
+ margin-left: 7rem;
+ margin-top: 2rem;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+}
+
+
+.card-reviews {
+  height: 350px;
+  width: 400px;
+  min-width: 250px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+}
+
+.card-reviews:focus-within~.card, .card-reviews:hover~.card-reviews {
+  transform: translateX(130px);
+}
+
+.card-reviews:hover {
+  transform: translateY(-1rem);
+}
+
+.card-reviews:not(:first-child) {
+  margin-left: -130px;
+}
+
+
+
+.card-header {
+  margin-bottom: auto;
+}
+
+.card-header p {
+  font-size: 14px;
+  margin: 0 0 1rem;
+  color: #7a7a8c;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  margin: .25rem 0 auto;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  transition:all .3s cubic-bezier(0.39, 0.575, 0.565, 1); 
+}
+
+.card-header h2:hover {
+  background-image: linear-gradient(to right,rgb(0,0,255),rgb(120,0,219)) !important;
+transition:all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card-author {
+  margin: 0rem 0 0;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.author-avatar {
+  grid-area: auto;
+  align-self: start;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.author-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  margin: 16px 10px;
+}
+
+.author-name {
+  grid-area: auto;
+  box-sizing: border-box;
+
+  font:1rem bold;
+}
+
+
+.author-name-prefix {
+  font-style: normal;
+  font-weight: 700;
+  color: #7a7a8c;
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #ff8a00;
+  stroke-width: 8;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.tags {
+  margin: 0rem 0 2rem;
+  padding: .5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.tags a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: .5rem;
+  color: #7a7a8c;
+  text-transform: uppercase;
+  font-size: .66rem;
+  border: 3px solid #28242f;
+  border-radius: 2rem;
+  padding: .2rem .85rem .25rem;
+  position: relative;
+}
+
+.tags a:hover {
+  background-image: linear-gradient(to right,rgb(120,0,255),rgb(255,255,255)) !important;
+
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
+}
+
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+.card-list {
+  display: flex;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+
+
+.card {
+  height: 300px;
+  width: 220px;
+  min-width: 150px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem #000;
+  display: flex;
+  flex-direction: column;
+  transition: .2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+}
+
+.card:focus-within~.card, .card:hover~.card {
+  transform: translateX(130px);
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+  margin-left: -130px;
+}
+
+
+.card-header {
+  margin-bottom: auto;
+}
+
+.card-header p {
+  font-size: 14px;
+  margin: 0 0 1rem;
+  color: #7a7a8c;
+}
+
+.card-header h2 {
+  font-size: 20px;
+  margin: .25rem 0 auto;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.card-header h2:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.card-author {
+  margin: 3rem 0 0;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  position: relative;
+}
+
+.author-avatar {
+  grid-area: auto;
+  align-self: start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.author-avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  margin: 16px 10px;
+}
+
+.author-name {
+  grid-area: auto;
+  box-sizing: border-box;
+  font-size: 2rem;
+  font-family: var(--heading);
+  text-transform: lowercase;
+}
+
+.author-name-prefix {
+  font-style: normal;
+  font-weight: 700;
+  color: #7a7a8c;
+}
+
+.half-circle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 48px;
+  fill: none;
+  stroke: #5624D0;
+  stroke-width: 8;
+  stroke-linecap: round;
+  pointer-events: none;
+    
+}
+
+.tags {
+  margin: 1rem 0 2rem;
+  padding: .5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.tags a {
+  font-style: normal;
+  font-weight: 700;
+  color: #7a7a8c;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 3px solid #28242f;
+  border-radius: 2rem;
+  padding: .2rem .85rem .25rem;
+  position: relative;
+}
+
+.tags a:hover {
+  background: linear-gradient(90deg,#ff8a00,#e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
+}
+
+
+.card-header-text{
+  font-size: 2rem;
+  font-family: var(--heading);
+  text-transform: lowercase;
+  margin-top: 1rem;
+}
+
+
+
+
 .contect{
     grid-row: 7 / 8;
     margin-top: 30rem;
