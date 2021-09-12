@@ -36,6 +36,13 @@ html {
 font-size: 62.5%; 
 }
 
+@media screen and (max-width:1300px) {
+html{
+  font-size: 60%;
+}
+
+}
+
 body {
 font-family: 'Jura', sans-serif;
 background-color: #000; 
@@ -2647,3 +2654,6 @@ box-sizing: border-box !IMPORTANT;
     margin: 5px 0;
   }
 }
+
+
+
