@@ -628,6 +628,11 @@ display: grid;
 grid-template-rows:15rem repeat(3,25rem);
 grid-template-columns: repeat(3,40rem);
 }
+@media only screen and (max-width:1115px) {
+  .header{
+    width: 100vw;
+  }
+}
 @media only screen and (max-width:1300px) {
   .header{
     grid-column: 1 / -1;
@@ -670,6 +675,11 @@ filter:brightness(-50);
     margin-left: 16rem;
   }
 }
+@media only screen and (max-width:1030px) {
+  .hero{
+    margin-left: 0% !important;
+  }
+}
 .hero:hover{
   filter: drop-shadow(10px 10px 100px skyblue);
   transition:var(--transition);
@@ -686,6 +696,7 @@ color: #ffff;
 text-transform: uppercase;
 font-size: 2.4rem;
 }
+
 @media only screen and (max-width:1300px) {
   .header-text{
     grid-column: 2 / 3;
@@ -698,6 +709,11 @@ font-size: 2.4rem;
   .header-text{
     font-size: 2.5rem;
     grid-column: 2/ 4;
+  }
+}
+@media only screen and (max-width:1030px) {
+  .header-text{
+    margin-left: -5rem !important;
   }
 }
 .main-text{
@@ -719,6 +735,16 @@ font-size: 2.4rem;
        left: 50%;
        transform: translate(-50%, -50%);
   }
+  @media only screen and (max-width:1209px) {
+    .container-btn{
+      left: 67rem;
+    }
+  }
+  @media only screen and (max-width:1182px) {
+  .container-btn{
+    left: 64rem;
+  }
+  }
  @media only screen and (max-width:1300px) {
    .container-btn{
      margin-left: -12rem;
@@ -739,6 +765,11 @@ font-size: 2.4rem;
  @media only screen and (max-width:1040px) {
    .container-btn{
      margin-left: 1rem;
+   }
+ }
+ @media only screen and (max-width:1030px) {
+   .container-btn{
+     margin-left: -25rem !important;
    }
  }
   .a {
@@ -1178,9 +1209,23 @@ margin-top: -25rem;
   left: 35rem !important;
   font-weight: bolder;
 }
+
+
 @media only screen and (max-width:1300px) {
   .hero-caption{
     left: 23rem;
+  }
+}
+@media only screen and (max-width:1279px) {
+  .hero-caption{
+    top: 118rem !important;
+    left: 22rem !important;
+  }
+}
+@media only screen and (max-width:1223px) {
+  .hero-caption{
+    left: 20rem !important;
+    top: 95rem;
   }
 }
 @media only screen and (max-width:1200px) {
@@ -1195,6 +1240,22 @@ margin-top: -25rem;
     left: 13rem;
   }
 }
+@media only screen and (max-width:1209px) {
+  .hero-caption{
+    top: 117rem !important;
+  }
+}
+@media only screen and (max-width:1115px) {
+  .hero-caption{
+    top: 115rem !important;
+  }
+}
+@media only screen and (max-width:1030px) {
+.hero-caption{
+  top: 112rem !important;
+  left:14rem !important;
+}
+}
 .hero-caption--paragraph{
   position: absolute;
   top: 120rem;
@@ -1204,6 +1265,7 @@ margin-top: -25rem;
   width: 40rem;
   left: 25rem;
 }
+
 @media only screen and (max-width:1300px) {
   .hero-caption--paragraph{
     left: 14rem;
@@ -1217,12 +1279,36 @@ margin-top: -25rem;
     top: 100rem;
   }
 }
+@media only screen and (max-width:1279px) {
+  .hero-caption--paragraph{
+    top: 121rem !important;
+    left: 15rem !important;
+  }
+}
+@media only screen and (max-width:1223px) {
+  .hero-caption--paragraph{
+top: 120rem !important;
+left: 9rem;
+  }
+}
 @media only screen and (max-width:1040px) {
   .hero-caption--paragraph{
     top: 95.5rem;
     left: 7.5rem;
   }
 }
+@media only screen and (max-width:1209px) {
+  .hero-caption--paragraph{
+    left: 10rem !important;
+  }
+}
+@media only screen and (max-width:1115px) {
+  .hero-caption--paragraph{
+    left:7.5rem !important;
+    top: 117.5rem !important;
+  }
+}
+
 .progress-bar--wrapper{
   
   width: 53rem;
@@ -1255,6 +1341,7 @@ top: -15rem;
   left: -17rem;
 }
 }
+
 @media only screen and (max-width:1110px) {
  .progress-bar--wrapper,.progress-bar--wrapper2,.progress-bar--wrapper3,.progress-bar--wrapper4,.progress-bar--wrapper5,.progress-bar--wrapper6,.progress-bar--wrapper7{
    left: -10rem !important;
@@ -1480,6 +1567,12 @@ left: 50rem;
     left: 43rem;
     top: -14.5rem;
   }
+  @media only screen and (max-width:1182px) {
+    .hexa8{
+      visibility: visible !important;
+
+    }
+  }
   .hexa1  .hex-item div::before,
   .hexa1 .hex-item div::after {
     background-color: var(--prime); }
@@ -1536,6 +1629,22 @@ left: 50rem;
   position: relative;
   top: 18rem;
   left:44rem;
+}
+@media only screen and (max-width:1223px) {
+  .hexa7{
+    left: -12rem !important;
+    top: 18rem !important;
+  }
+  .hexa8{
+    left: -12rem !important;
+    top: 17.5rem !important;
+  }
+}
+@media only screen and (max-width:1182px) {
+  .hexa8{
+    visibility: visible !important;
+
+  }
 }
 .hexa8{
 visibility: hidden;
@@ -1768,6 +1877,11 @@ height: 100vh;
  margin-left: 7rem;
  margin-top: 2rem;
 }
+@media only screen and (max-width:1223px) {
+  .work-heading{
+    margin-top: 1rem !important;
+  }
+}
 @media only screen and (max-width:1300px) {
   .work-heading{
     margin-left: 0%;
@@ -1793,9 +1907,19 @@ height: 100vh;
     left: -5rem;
   }
 }
+@media only screen and (max-width:1279px) {
+  .flip-card{
+    top: 4rem !important;
+  }
+}
 @media only screen and (max-width:1110px) {
   .flip-card{
     left: -9rem;
+  }
+}
+@media only screen and (max-width:1115px) {
+  .flip-card{
+    left: -10rem !important;
   }
 }
 .flip-card2{
@@ -1810,6 +1934,11 @@ height: 100vh;
         overflow: hidden;
         border-radius: 25px;
 }
+@media only screen and (max-width:1279px) {
+.flip-card2{
+  top: -38rem !important;
+}
+}
 @media only screen and (max-width:1300px) {
   .flip-card2{
     left: 33rem;
@@ -1818,6 +1947,11 @@ height: 100vh;
 @media only screen and (max-width:1110px) {
   .flip-card2{
     left: 23rem;
+  }
+}
+@media only screen and (max-width:1115px) {
+  .flip-card2{
+    left: 25rem !important;
   }
 }
 .flip-card3{
@@ -1832,6 +1966,11 @@ height: 100vh;
         overflow: hidden;
         border-radius: 25px;
 }
+@media only screen and (max-width:1279px) {
+  .flip-card3{
+    top: -80rem !important;
+  }
+  }
 @media only screen and (max-width:1300px) {
   .flip-card3{
     left: 70rem;
@@ -1841,6 +1980,11 @@ height: 100vh;
   .flip-card3{
     left: 55rem;
     top: -77rem;
+  }
+}
+@media only screen and (max-width:1115px) {
+  .flip-card3{
+    left: 60rem !important;
   }
 }
 .flip-card-inner {
@@ -1909,6 +2053,17 @@ height: 100vh;
 .flip-card-logo2{
   width: 18rem;
   margin: .2rem;
+}
+@media only screen and (max-width:1209px) {
+  .flip-card-logo{
+    margin-top: 2rem !important;
+  }
+  .flip-card-logo2{
+    margin-top: -1.5rem !important;
+  }
+  .flip-card-logo3{
+    margin-top: 2rem !important;
+  }
 }
 @media only screen and (max-width:1200px) {
   .flip-card-logo{
