@@ -113,8 +113,6 @@ grid-column: 1 / -1;
 transform: rotate(270deg) !important;
 top: -27rem!important;
 
-display: block;
-visibility: hidden;
 }
   #navbar{
     visibility: hidden;
@@ -1177,10 +1175,25 @@ margin-top: 12rem;
  margin-left: 7rem;
  margin-top: 2rem;
 }
+@media only screen and (max-width:1030px) {
+  .about-heading{
+    margin-top:-12rem !important;
+  }
+}
 @media only screen and (max-width:1040px) {
   .about-heading{
     margin-top: .7rem;
     margin-left: -5rem;
+  }
+}
+@media only screen and (max-width:1030px) {
+  .about-heading{
+    margin-top: 4rem !important;
+  }
+}
+@media only screen and (max-width:985px) {
+  .about-heading{
+    margin-top: 5rem !important;
   }
 }
 .about-hero{
@@ -1188,6 +1201,11 @@ grid-row: 2 / 3;
 margin-left: 10rem;
 margin-top: -25rem;
   width: 60%;
+}
+@media only screen and (max-width:1030px) {
+  .about-hero{
+    margin-top: -38rem !important;
+  }
 }
 @media only screen and (max-width:1300px) {
   .about-hero{
@@ -1199,13 +1217,26 @@ margin-top: -25rem;
     margin-left: -7rem;
   }
 }
+@media only screen and (max-width:1030px) {
+  .about-hero{
+    margin-left: 0rem ;
+    margin-top: -22rem !important;
+    width: 70%;
+  }
+}
+@media only screen and (max-width:985px) {
+  .about-hero{
+    margin-top: 0%;
+  }
+}
 .hero-caption{
   text-transform: capitalize;
   font-size: 2rem;
   font-family: 'Raleway', sans-serif;
   color: var(--prime);
   position: absolute;
-  top:117rem !important;
+
+  top:100rem !important;
   left: 35rem !important;
   font-weight: bolder;
 }
@@ -1218,13 +1249,13 @@ margin-top: -25rem;
 }
 @media only screen and (max-width:1279px) {
   .hero-caption{
-    top: 118rem !important;
-    left: 22rem !important;
+    top: 118rem;
+    left: 22rem;
   }
 }
 @media only screen and (max-width:1223px) {
   .hero-caption{
-    left: 20rem !important;
+    left: 20rem;
     top: 95rem;
   }
 }
@@ -1232,6 +1263,7 @@ margin-top: -25rem;
   .hero-caption{
     left: 20rem;
     top: 97rem;
+    display: none;
   }
 }
 @media only screen and (max-width:1040px) {
@@ -1242,23 +1274,25 @@ margin-top: -25rem;
 }
 @media only screen and (max-width:1209px) {
   .hero-caption{
-    top: 117rem !important;
+    top: 117rem;
   }
 }
 @media only screen and (max-width:1115px) {
   .hero-caption{
-    top: 115rem !important;
+    top: 110rem;
   }
 }
 @media only screen and (max-width:1030px) {
 .hero-caption{
-  top: 112rem !important;
-  left:14rem !important;
+  top: 72rem;
+  left:50rem;
+  font-size: 2.5rem;
 }
 }
+
 .hero-caption--paragraph{
   position: absolute;
-  top: 120rem;
+  top: 102rem;
   font-weight: bold;
   font-size: 2rem;
   color: var(--prime);
@@ -1277,17 +1311,18 @@ margin-top: -25rem;
   .hero-caption--paragraph{
     left: 10rem;
     top: 100rem;
+    display: none;
   }
 }
 @media only screen and (max-width:1279px) {
   .hero-caption--paragraph{
-    top: 121rem !important;
-    left: 15rem !important;
+    top: 121rem;
+    left: 15rem;
   }
 }
 @media only screen and (max-width:1223px) {
   .hero-caption--paragraph{
-top: 120rem !important;
+top: 120rem;
 left: 9rem;
   }
 }
@@ -1299,15 +1334,24 @@ left: 9rem;
 }
 @media only screen and (max-width:1209px) {
   .hero-caption--paragraph{
-    left: 10rem !important;
+    left: 10rem;
   }
 }
+
 @media only screen and (max-width:1115px) {
   .hero-caption--paragraph{
-    left:7.5rem !important;
-    top: 117.5rem !important;
+    left:7.5rem;
+    top: 112.5rem;
   }
 }
+@media only screen and (max-width:1030px) {
+  .hero-caption--paragraph{
+    top: 75rem;
+    left: 50rem;
+    font-size: 2rem;
+  }
+}
+
 
 .progress-bar--wrapper{
   
@@ -1373,7 +1417,29 @@ top: -15rem;
       top: 7rem !important;
     }
  }
-
+ @media only screen and (max-width:1030px) {
+  .progress-bar--wrapper{
+right: 10% !important;
+  }
+  .progress-bar--wrapper2{
+    left: -17rem;
+  }
+  .progress-bar--wrapper3{
+    left: -17rem;
+  }
+  .progress-bar--wrapper4{
+    left: -17rem;
+  }
+  .progress-bar--wrapper5{
+    left: -17rem;
+  }
+  .progress-bar--wrapper6{
+    left: -17rem;
+  }
+  .progress-bar--wrapper7{
+    left: -17rem;
+  }
+  }
 .progress-bar--wrapper2{
   
   width: 53rem;
@@ -1644,6 +1710,20 @@ left: 50rem;
   .hexa8{
     visibility: visible !important;
 
+  }
+}
+@media only screen and (max-width:1030px) {
+  .hexa5{
+    display:none !important;
+  }
+  .hexa6{
+display: none !important;
+  }
+  .hexa4{
+visibility: hidden;
+  }
+  .hexa7{
+    left: 24rem !important;
   }
 }
 .hexa8{
