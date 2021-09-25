@@ -838,6 +838,11 @@ filter:brightness(-50);
     margin-left: -23rem !important;
   }
 }
+@media only screen  and (max-width:400px) {
+  .hero{
+    margin-left: -28rem !important;
+  }
+}
 .hero:hover{
   filter: drop-shadow(10px 10px 100px skyblue);
   transition:var(--transition);
@@ -893,6 +898,11 @@ font-size: 2.4rem;
 @media only screen  and (max-width:500px)  {
   .header-text{
   margin-left: -30rem !important;
+  }
+}
+@media only screen  and (max-width:400px)  {
+  .header-text{
+  margin-left: -35rem !important;
   }
 }
 .main-text{
@@ -1877,6 +1887,12 @@ top: 15rem;
   height: 2.5rem;
   background-color: #17141D;
 }
+
+@media only screen and (max-width:400px) {
+  .services{
+    display: none !important;
+  }
+}
 .tag1{
   position: absolute;
   background-color: #4a4df3;
@@ -2594,6 +2610,15 @@ background-position-x:1rem !important ;
     width: 50% !important;
   }
 }
+@media only screen and (max-width:500px) {
+  .flip-card2{
+    width: 60% !important;
+    height: 60% !important;
+    font-size: 1rem !important; 
+   left: -5rem
+   !important;
+  }
+}
 .flip-card3{
   background-color: transparent;
   width: 30%;
@@ -2672,6 +2697,15 @@ width: 30rem !important;
   .flip-card3{
     left: 14rem !important;
   }
+} 
+@media only screen and (max-width:500px) {
+.flip-card3{
+  width: 60% !important;
+  height: 60% !important;
+  font-size: 1rem !important;
+  top: 10rem !important;
+  left: -5rem !important;
+}  
 }
 .flip-card-inner {
   position: relative;
@@ -2954,6 +2988,7 @@ background-image: linear-gradient(to right bottom, #ff3366,#ba265d);
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   
 }
+
 .progress-bar-icon1{
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
@@ -3428,6 +3463,12 @@ font-size: 1.5rem !important;
     margin-top: 15rem !important;
   }
 }
+@media only screen and (max-width:500px) {
+  .feedback-heading{
+    margin-top: 22rem !important;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -3459,6 +3500,12 @@ width: 100%;
     .card-list{
       top: 20rem;
       left: -20rem !important;
+    }
+    @media only screen and (max-width:500px) { 
+      .card-list{
+        top: 27rem;
+        left: -26rem !important;
+      }
     }
     .tags a{
       margin-top: -2rem !important;
@@ -3683,6 +3730,12 @@ a {
  
   
 }
+@media only screen  and (max-width:500px) {
+  .card2{
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 
 .card:focus-within~.card, .card:hover~.card {
   transform: translateX(130px);
@@ -3879,13 +3932,21 @@ width: 120rem !important;
     font-size: 2rem;
   }
 }
+@media only screen  and (max-width:500px)  {
+  .footer-heading{
+    font-size: 1.7rem;
+  }
+.about-text{
+  font-size: 1.5rem !important;
+}
+}
 .about-text{
   font-size: 1.8rem;
   font-weight: bolder;
   color: #fff;
 }
 .text{
-  font-size: 2rem !important;
+  font-size: 2rem;
 }
 @media only screen and (max-width:550px) {
   .text{
@@ -4228,6 +4289,14 @@ margin: 1rem;
     right: 12rem;
   }
 }
+@media only screen and (max-width:400px) {
+  .navigation__button{
+    right: 18rem !important;
+  }
+  .navigation__background{
+    right: 18rem;
+  }
+}
 .navigation__icon,
 .navigation__icon::before,
 .navigation__icon::after {
@@ -4295,3 +4364,73 @@ margin: 1rem;
   top:0;
 }
 
+
+
+@media only screen  and (max-width:400px) {
+  .progress-bar--wrapper,.progress-bar--wrapper2,.progress-bar--wrapper3,.progress-bar--wrapper4,.progress-bar--wrapper5,.progress-bar--wrapper6,.progress-bar--wrapper7{
+    display: none;
+  }
+ .center-pro{
+   visibility: visible !important;
+   opacity: 1 !important;
+ }
+}
+
+
+
+.center-pro{
+ visibility:hidden;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.ring{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+@keyframes ring {
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+}
+.ring:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+.taa{
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 200px;
+  animation: text 3s ease-in-out infinite;
+}
+@keyframes text {
+  50%{
+    color: black;
+  }
+}
+@media only screen and (max-width:400px) { 
+  .work{
+    top: 60rem;
+  }
+}
